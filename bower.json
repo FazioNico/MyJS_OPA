@@ -1,0 +1,21 @@
+{
+  "name": "MyJS_OPA",
+  "description": "js One Page Application",
+  "main": "index.html",
+  "moduleType": [],
+  "authors": [
+    "Nicolas Fazio"
+  ],
+  "license": "",
+  "homepage": "http://nicolasfazio.ch",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

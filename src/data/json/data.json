@@ -1,0 +1,68 @@
+{
+  "pages": {
+    "en": {
+      "accueil": {
+        "menu": "Home",
+        "title": "",
+        "content": ""
+      },
+      "contact": {
+        "menu": "Contact",
+        "title": "",
+        "content": "<div id='map'></div><p>Rue de la Croix-d'Or 10<br>1204 Genève - Suisse</p><p>Tel: +41 22 310 49 42<br>Fax: +41 22 310 45 28<br>Mail: daniel@schutz-law.ch</p>"
+      },
+      "activitees": {
+        "menu": "Activity areas",
+        "title": "",
+        "content": "<h1>Activity areas</h1><ul><li>Commercial and Corporate law</li><li>Banking and Finance</li><li>Labor law</li><li>Real estate, Leases and Rents</li><li>Family law and Inheritance</li><li>Telecommunication law</li><li>Medical tariffs</li><li>Debt Enforcement and Bankruptcy Law</li><li>Civil Procedure</li></ul>"
+      },
+      "valeurs": {
+        "menu": "My principles",
+        "title": "",
+        "content": "<h1>My principles</h1><p><b>Confidence</b><br>Mutual confidence is essential to properly defend the interests of the client</p><p><b>Integrity</b><br>Integrity and honesty are the foundation of any relationship with the client</p><p><b>Accountability and quality</b><br>The client's interests are respected at his best taking into account his needs</p><p><b>Satisfaction</b><br>A long-standing professional relationship with the client is the best proof of his satisfaction</p>"
+      },
+      "profil": {
+        "menu": "Profile",
+        "title": "",
+        "content": "<h1>My profile</h1><p>Independent lawyer since 2000<br>Admitted to the Geneva Bar since 1993<br>Fürsprecher in Berne since 1991<br>Born October 19, 1958 in Berne</p><p>Member of the Geneva and the Swiss Bar Association</p><p>Various mandates as Board member<br>Employed at the University Hospital of Geneva, Tariff Service<br>Associate of KOHN & AGUIGNIER in Paris</p><p><b>LANGUAGES</b><br>German, French, English, Italian, Spanish</p>"
+      },
+      "404": {
+        "menu": "404",
+        "title": "",
+        "content": "<h1>Cette page n'existe pas.</h1><p>back to home</p>"
+      }
+    },
+    "de": {
+      "accueil": {
+        "menu": "Home",
+        "title": "",
+        "content": ""
+      },
+      "contact": {
+        "menu": "Kontakt",
+        "title": "",
+        "content": "<div id='map'></div><p>Rue de la Croix-d'Or 10<br>1204 Genève - Suisse</p><p>Tel: +41 22 310 49 42<br>Fax: +41 22 310 45 28<br>Mail: daniel@schutz-law.ch</p>"
+      },
+      "activitees": {
+        "menu": "Tätigkeitgebiete",
+        "title": "",
+        "content": "<h1>Tätigkeitgebiete</h1><ul><li>Handels- und Gesellschaftsrecht </li><li>Bank- und Finanzwesen</li><li>Arbeitsrecht</li><li>Immobilien- und Mietrecht</li><li>Familien- und Erbrecht</li><li>Telekommunikation</li><li>Medizintarife</li><li>Schuldbetreibung und Konkurs</li><li>Zivilverfahren</li></ul>"
+      },
+      "valeurs": {
+        "menu": "Meine Werte",
+        "title": "",
+        "content": "<h1>Meine Werte</h1><p><b>Vertrauen</b><br>Gegenseitiges Vertrauen ist unumgänglich, um die Interessen des Kunden richtig zu vertreten</p><p><b>Integrität</b><br>Integrität und Ehrlichkeit sind die Grundlagen jeder Beziehung mit dem Kunden</p><p><b>Verantwortlichkeit und Qualität</b><br>Die Interessen des Kunden werden zu seinem Besten unter Berücksichtigung seiner Bedürfnisse gewahrt</p><p><b>Zufriedenheit</b><br>Eine professionelle Beziehung von langer Dauer mit dem Kunden ist der beste Beweis seiner Zufriedenheit</p>"
+      },
+      "profil": {
+        "menu": "Profil",
+        "title": "",
+        "content": "<h1>Mein Profil</h1><p>Selbständiger Rechtsanwalt seit 2000<br>Zugelassen in Genf seit 1993<br>Fürsprecher in Bern seit 1991<br>Geboren am 19. Oktober 1958 in Bern</p><p>Mitglied des Genfer und Schweizerischen Anwaltverbands</p><p>Verschiedene Mandate als Verwaltungsrat<br>Angestellter am Universitätsspital in Genf, Tarifabteilung<br>Rechtsanwalt bei KOHN & AGUIGNIER in Paris</p><p><b>Sprachen</b><br>Deutsch, Französisch, Englisch, Italienisch, Spanisch</p>"
+      },
+      "404": {
+        "menu": "404",
+        "title": "",
+        "content": "<h1>Cette page n'existe pas.</h1><p>back to home</p>"
+      }
+    }
+  }
+}

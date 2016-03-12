@@ -1,0 +1,275 @@
+/*!
+ * Template default OPA v1.0.1
+ * Copyright 2016, Nicolas Fazio (http://nicolasfazio.ch).
+ * Tous droits reservés.
+ *
+ */
+ /* Bof Effect Home Page */
+*.full_height {
+	height:100%;
+}
+html.full_height, main.full_height {
+	height:100%;
+}
+*.no_margin {
+	margin:0;
+}
+*.hideElem,ul.navbar-nav.hideElem{
+	opacity: 0;
+	/*overflow: hidden;*/
+	-webkit-transition: all 0.2s ease;
+	-o-transition:  all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+*.align_middle{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+section{
+	-webkit-transition: all 0.5s ease;
+	-o-transition:  all 0.5s ease;
+	transition: all 0.5s ease;
+	transition-delay:0.25s;
+
+}
+section.opp_f {
+	opacity: 0;
+	-webkit-transition: all 0s ease;
+	-o-transition:  all 0s ease;
+	transition: all 0s ease;
+	transition-delay:0s;
+}
+.opp_s {
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+	-o-transition:  all 0.5s ease;
+	transition: all 0.5s ease;
+	transition-delay:0.25s;
+}
+
+html,body,header,nav,.navbar-header,a.navbar-brand,.navbar-brand>span{
+
+	-webkit-transition: all 0.3s ease;
+	-o-transition:  all 0.3s ease;
+	transition: all 0.3s ease;
+}
+ul.navbar-nav{
+	-webkit-transition: all 0.5s ease;
+	-o-transition:  all 0.5s ease;
+	transition: all 0.5s ease;
+	transition-delay:0.25s;
+}
+/* Eof */
+
+header {
+	background: #f8f8f8;
+	height: 60px;
+}
+
+.navbar{
+	position: absolute;
+	top: 0px;
+    margin-top: 0px;
+    width:100%;
+}
+
+.navbar-default .navbar-brand {
+    height: auto;
+    font-weight: bold;
+}
+.navbar-default .navbar-brand span{
+    font-weight: lighter;
+}
+.navbar-default {
+    z-index: 9999;
+    border-color: transparent;
+}
+ul.navbar-nav {
+	height:auto;
+}
+.navbar-brand, .navbar-brand>span {
+	display:block;
+}
+
+.middle_height_bottom{
+    top:50%;
+    margin-top: -40px;
+}
+
+.btn-group {
+	display: block;
+}
+.btn-group.hideElem button{
+	margin-top:-1000px;
+}
+html {
+	position: absolute;
+	top:0px;
+	width:100%;
+}
+section {
+	position: absolute;
+    width: 100%;
+    display: table;
+    height: 100%;
+    padding-top: 100px;
+}
+section>.center_table_cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 15px;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin-bottom: 5px;
+}
+
+
+@media (min-width: 792px){
+    .container {
+        width: 100%;
+        max-width: 1170px;
+    }
+}
+
+h1, .h1 {
+    font-family: Georgia, Times, serif;
+    font-size: 4.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+b, strong {
+	font-family: Georgia;
+    font-weight: bold;
+    font-size: 120%;
+}
+p {
+    margin: 0 0 15px;
+}
+#map {
+	width:100%;
+	max-width:500px;
+	height:250px;
+	background:black;
+	margin-bottom:20px;
+	z-index: 1;
+}
+
+
+section ul {
+	font-family:arial,sans-serif;
+	padding: 0px 20px;
+}
+
+main {
+	position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+}
+
+
+@media (max-width: 791px){
+	/*
+	*/
+	*.full_height {
+		height: auto;
+	}
+	body.full_height, header.full_height {
+		height: 100%;
+	}
+	main.full_height{
+		height: auto;
+	}
+	main.full_height.middle_height_top, body.full_height > main.full_height {
+		height: 100%;
+	}
+	body.full_height header main.full_height, .header  main.full_height ,header.start > main.full_height{
+		height: auto !important;
+	}
+
+	.navbar-brand {
+		
+	}
+	.navbar-header.middle_height_bottom > .navbar-toggle {
+		display: none;
+	}
+	.navbar-toggle {
+		border-radius: 2px;
+		margin-top:20px;
+	}  
+	.navbar-default.open {
+		-webkit-transition: all 0.1s ease;
+		-o-transition:  all 0.1s ease;
+		transition: all 0.1s ease;
+		transition-delay:0s;
+	}
+	.navbar-default.close {
+		-webkit-transition: all 0.3s ease;
+		-o-transition:  all 0.3s ease;
+		transition: all 0.3s ease;
+		transition-delay:0.3s;
+	}
+	.navbar-default.open .navbar-brand {
+		-webkit-transition: all 0.3s ease;
+		-o-transition:  all 0.3s ease;
+		transition: all 0.3s ease;
+		transition-delay:0s;
+	}
+	.navbar-header, span.navbar-brand, .navbar-brand>span {
+	    -webkit-transition: all 0.3s ease;
+	    -o-transition: all 0.3s ease;
+	    transition: all 0s ease;
+	}
+
+	section.opp_f {
+    	display: none;
+	}
+
+	footer {
+		display:none;
+	}
+	main {
+		height:100%;
+	}
+}
+
+
+footer {
+	display: none;
+}
+
+
+@media (max-width: 791px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+
