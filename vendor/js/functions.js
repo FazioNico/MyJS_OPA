@@ -141,7 +141,7 @@ var NewRouter = function(slug){
 		case sl == 1:
 			r_sl = true
 			if(!slug[0]){
-				hash = ["#", $('html')[0].getAttribute('lang'), "accueil"]
+				hash = ["#", $('html')[0].getAttribute('lang'), "accueil"] // right case
 			}
 			if(slug[0]){
 				hash = ["#", $('html')[0].getAttribute('lang'), "404"]
@@ -150,7 +150,7 @@ var NewRouter = function(slug){
 		case sl == 2:
 			r_sl = true
 			if(slug[1] == 'accueil'){
-				hash = ["#", $('html')[0].getAttribute('lang'), "accueil"]
+				hash = ["#", $('html')[0].getAttribute('lang'), "accueil"] // right case
 			}
 			if(slug[1] != 'accueil'){
 				hash = ["#", $('html')[0].getAttribute('lang'), "404"]
@@ -158,7 +158,7 @@ var NewRouter = function(slug){
 			break
 		case sl == 3:
 			r_sl = true
-			hash = ["#", slug[1], slug[2]]
+			hash = ["#", slug[1], slug[2]] // right case
 			break
 		case sl >= 4:
 			r_sl = false
