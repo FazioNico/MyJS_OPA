@@ -22,7 +22,10 @@ var LayoutSwitchEffectToPage =  function(){
 	$('.btn-group').addClass('hideElem')
 	$('footer').removeClass('hideElem');
 }
+
 var UserCustomFunction =  function(){
+
+/*
 	$('.navbar-toggle').click(function(){
 		var open = $('.navbar.navbar-default').hasClass('open')
 	    if (open === false){
@@ -51,12 +54,40 @@ var UserCustomFunction =  function(){
 			})		
 		})		
 	};
+*/
 
-	/* put your custom VAR here  */
+	/* put your custom VAR where VAR Need to be restart (init()) in each hash change...  */
 	initialize();	// Google Map
 };
 
 /* put your custom function here */
+
+// Responsive utility for navbar header 
+if ($( window ).width() <= 768){
+	$('.navbar-toggle').on('click', function(){
+		$('nav').toggleClass('open')
+	});
+
+	$('.navbar-collapse a').click(function(){
+		$(".navbar-collapse").collapse('hide')
+		$('nav').toggleClass('open')
+	})	
+};
+
+// Modial Mentions
+$('#mentions').on('show.bs.modal', function (event) {
+  var modal = $(this)
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  // request to get data of mention.html
+  $.get("src/data/mentions.html", function(data) {
+      //console.log(data)
+	  var mentionHTML = data // Extract info from mention.html
+	  // add data to modial
+	  modal.find('.modal-body').html(mentionHTML)
+  })  
+});
+
+// GoogleMap function
 function initialize() {
 	var geo_lat = 46.202691
 	var geo_long = 6.149205

@@ -1,8 +1,10 @@
 /* Bof - functions */
 var Service = function(hash){
 	//console.log(state, hash) // Get $hash for data storage
-    var q  = $.getJSON('http://localhost:8888/src/data/json/data.json', function(data) {
-    //var q  = $.getJSON('http://schutz-law.ch/src/data/json/data.json', function(data) {
+	
+    var q  = $.getJSON('http://ateliers.nomades.ch/~fazio/Projet-WebDesigner/MyJS_OPA/src/data/json/data.json', function(data) {
+    //var q  = $.getJSON('http://localhost:8888/src/data/json/data.json', function(data) { // with MAMP
+    //var q  = $.getJSON('http://schutz-law.ch/src/data/json/data.json', function(data) { // For the client
     	return data
     })
     return q
@@ -28,7 +30,7 @@ var saveCurrentHTML = function(data){
 	   		arraySection += '"'+allSection[n].id+'":{"content": "'+text+'","menu": "'+menu+'", "title": ""},'
 	   }
 	   arraySection += '"accueil":{"content": "","menu": "Accueil", "title": ""},'
-	   arraySection = arraySection.substring(0,arraySection.length-1)
+	   arraySection = arraySection.substring(0,arraySection.length-1) // retirer derière virgule
 	   //console.log(arraySection)
 	   var defaultDocLang = ($('html')[0].getAttribute('lang'))
 	   var test = '{ "'+defaultDocLang+'" : '+
@@ -126,6 +128,11 @@ var SectionDisplayer = function(hash){
 	// Bof - btn Accueil
 	$('.backtohome').on('click', function(){
 		BacktohomeBtn(allSection)
+	});
+	// Bof - lien mentions
+	$('a.mentions').on('click', function(e){
+		e.preventDefault();
+		//BacktohomeBtn(allSection)
 	});
 };
 

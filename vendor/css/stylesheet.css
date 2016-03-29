@@ -50,11 +50,11 @@ section.opp_f {
 	transition-delay:0.25s;
 }
 
-html,body,header,nav,.navbar-header,a.navbar-brand,.navbar-brand>span{
+html,body,header,nav,.navbar-header,.navbar-default .navbar-brand,.navbar-brand,a.navbar-brand,.navbar-brand>span{
 
 	-webkit-transition: all 0.3s ease;
 	-o-transition:  all 0.3s ease;
-	transition: all 0.3s ease;
+	transition: all 0.4s ease;
 }
 ul.navbar-nav{
 	-webkit-transition: all 0.5s ease;
@@ -78,7 +78,7 @@ header {
 
 .navbar-default .navbar-brand {
     height: auto;
-    font-weight: bold;
+    font-weight: 700;
 }
 .navbar-default .navbar-brand span{
     font-weight: lighter;
@@ -240,9 +240,6 @@ main {
 }
 
 
-footer {
-	display: none;
-}
 
 
 @media (max-width: 791px) {

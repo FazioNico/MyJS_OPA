@@ -29,7 +29,7 @@
       "404": {
         "menu": "404",
         "title": "",
-        "content": "<h1>Cette page n'existe pas.</h1><p>back to home</p>"
+        "content": "<h1>Page not found.</h1><p>Back <a href='./''>to home</a></p>"
       }
     },
     "de": {
@@ -61,7 +61,7 @@
       "404": {
         "menu": "404",
         "title": "",
-        "content": "<h1>Cette page n'existe pas.</h1><p>back to home</p>"
+        "content": "<h1>Page not found.</h1><p>back <a href='./''>to home</a></p>"
       }
     }
   }
