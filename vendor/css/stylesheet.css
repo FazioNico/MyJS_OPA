@@ -29,6 +29,7 @@ html.full_height, main.full_height {
 }
 
 section{
+	z-index: 2;
 	-webkit-transition: all 0.5s ease;
 	-o-transition:  all 0.5s ease;
 	transition: all 0.5s ease;
@@ -37,6 +38,7 @@ section{
 }
 section.opp_f {
 	opacity: 0;
+	z-index:0;
 	-webkit-transition: all 0s ease;
 	-o-transition:  all 0s ease;
 	transition: all 0s ease;
@@ -270,3 +272,19 @@ main {
 }
 
 
+#preloader {
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background: white;
+	z-index: -9999;
+	opacity: 0;
+	transition: 0.3s ;
+}
+#preloader.active {
+	opacity: 1;
+	height:100%;
+	z-index: 9999;
+}

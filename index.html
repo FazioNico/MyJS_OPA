@@ -71,6 +71,9 @@
 						<div id='map'></div>
 						<h1 class="hidden">Contact</h1>
 						<p>Rue de la Croix-d'Or 10<br>1204 Genève - Suisse</p><p>Tél: +41 22 310 49 42<br>Fax: +41 22 310 45 28<br>Mail: daniel@schutz-law.ch</p>
+						<p>
+							<a href="#/fr/question" class="btn btn-default">Posez votre question</a>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -124,6 +127,70 @@
 			</div>
 		  </div>
 		</section>
+		<section id="question">
+		  <div class="center_table_cell">
+		  	<div class="container">
+				<div class="row">
+					<div class="col-md-12 dataSection">
+						<div class="row">
+							<div class="col-sm-8 col-lg-7">
+								<h1>Posez moi votre question</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, laborum veritatis ipsa quidem voluptatum. Aut unde id, eveniet sed laudantium aspernatur fuga cupiditate, fugit ipsam perspiciatis vel. Facere, odit. Dolores.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 col-lg-4">
+								<form id="question_form" class="material_effect" method="POST" action="send_form.php">
+									<div class="row">
+										<div class="form-group col-sm-10">
+											<label for="email">Email address</label>
+											<input type="email" class="form-control" id="email" name="email">
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-sm-10">
+											<label for="subject">Suget</label>
+											<input type="text" class="form-control" id="subject" name="subject">
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-sm-10">
+											<label for="message">Message</label>
+											<textarea id="message" name="message" class="form-control" rows="3"></textarea>
+										</div>
+									</div>
+									<button id="submit_btn" type="submit" class="btn btn-default">Envoyer</button>
+								</form>									
+							</div>	
+							<div class="col-sm-4 col-lg-3">
+								<div class="alert alert-warning alert-dismissible" role="alert">
+								  <button type="button" class="close btn-close-alert"><span aria-hidden="true">&times;</span></button>
+								  <div class="alert-content">
+								  	<!-- content by js function -->
+								  </div>
+								</div>	
+
+								<div class="alert alert-danger alert-dismissible" role="alert">
+								  <button type="button" class="close btn-close-alert"><span aria-hidden="true">&times;</span></button>
+								  <div class="alert-content">
+								  	<!-- content by js function -->
+								  </div>
+								</div>	
+
+								<div class="alert alert-success alert-dismissible" role="alert">
+								  <button type="button" class="close btn-close-alert"><span aria-hidden="true">&times;</span></button>
+								  <div class="alert-content">
+								  	<!-- content by js function -->
+								  </div>
+								</div>	
+
+							</div>		
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</section>
 	</main>
 
 	<footer class="hideElem">
@@ -167,15 +234,12 @@
 		  </div>
 		</div>		
 	</footer>
+	<div id="preloader" class="active"></div>
 	<!-- Bof - JS lib -->
 	<script type="text/javascript" src="lib.src/jquery/dist/jquery.min.js"></script>
 	<script>
-		// test to prevent bug with hidden element when page is loading ( reload to ) 
-		/*
-		$('main').hide();
-		$('main').show('1000');
-		*/
-
+		// prevent bug with hidden element when page is loading ( reload 
+		setTimeout(function(){ $('#preloader').removeClass('active') }, 100);
 	</script>
 	<script type="text/javascript" src="lib.src/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
@@ -183,5 +247,6 @@
 	<script type="text/javascript" src="vendor/js/app.js?v=0.0.1"></script>
 	<script type="text/javascript" src="vendor/js/style.js?v=0.0.1"></script>
 	<!-- Eof - JS lib -->
+
 </body>
 </html>
