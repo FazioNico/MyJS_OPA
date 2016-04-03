@@ -1,8 +1,6 @@
 /* Bof - functions */
 var Service = function(hash){
 	//console.log(state, hash) // Get $hash for data storage
-	
-
     //var q  = $.getJSON('http://ateliers.nomades.ch/~fazio/Projet-WebDesigner/MyJS_OPA/src/data/json/data.json', function(data) {
     var q  = $.getJSON('http://localhost:8888/src/data/json/data.json', function(data) { // with MAMP
     //var q  = $.getJSON('http://schutz-law.ch/src/data/json/data.json', function(data) { // For the client
