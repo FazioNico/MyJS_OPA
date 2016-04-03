@@ -234,12 +234,15 @@
 		  </div>
 		</div>		
 	</footer>
-	<div id="preloader" class="active"></div>
 	<!-- Bof - JS lib -->
 	<script type="text/javascript" src="lib.src/jquery/dist/jquery.min.js"></script>
 	<script>
-		// prevent bug with hidden element when page is loading ( reload 
-		setTimeout(function(){ $('#preloader').removeClass('active') }, 100);
+		// test to prevent bug with hidden element when page is loading ( reload to ) 
+		/*
+		$('main').hide();
+		$('main').show('1000');
+		*/
+
 	</script>
 	<script type="text/javascript" src="lib.src/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
@@ -247,6 +250,5 @@
 	<script type="text/javascript" src="vendor/js/app.js?v=0.0.1"></script>
 	<script type="text/javascript" src="vendor/js/style.js?v=0.0.1"></script>
 	<!-- Eof - JS lib -->
-
 </body>
 </html>

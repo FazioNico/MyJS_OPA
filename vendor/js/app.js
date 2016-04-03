@@ -1,3 +1,4 @@
+
 $(window).on('hashchange', function() {
  	var slug = getSlug()
 	NewControlleur(slug)
@@ -26,6 +27,7 @@ $(document).ready(function () {
    	   l = hash_ready[1]
    	   p = hash_ready[2]
 	   LoadLangueText(d,l,p) // function LoadLangueText on content section element
+       UserCustomFunction()
 	});
 	//console.log(l)
 	// Eof - Start App

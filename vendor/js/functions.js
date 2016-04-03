@@ -1,8 +1,10 @@
 /* Bof - functions */
 var Service = function(hash){
 	//console.log(state, hash) // Get $hash for data storage
-    var q  = $.getJSON('http://localhost:8888/src/data/json/data.json', function(data) {
-    //var q  = $.getJSON('http://schutz-law.ch/src/data/json/data.json', function(data) {
+	
+    var q  = $.getJSON('http://ateliers.nomades.ch/~fazio/Projet-WebDesigner/MyJS_OPA/src/data/json/data.json', function(data) {
+    //var q  = $.getJSON('http://localhost:8888/src/data/json/data.json', function(data) { // with MAMP
+    //var q  = $.getJSON('http://schutz-law.ch/src/data/json/data.json', function(data) { // For the client
     	return data
     })
     return q
@@ -28,7 +30,7 @@ var saveCurrentHTML = function(data){
 	   		arraySection += '"'+allSection[n].id+'":{"content": "'+text+'","menu": "'+menu+'", "title": ""},'
 	   }
 	   arraySection += '"accueil":{"content": "","menu": "Accueil", "title": ""},'
-	   arraySection = arraySection.substring(0,arraySection.length-1)
+	   arraySection = arraySection.substring(0,arraySection.length-1) // retirer derière virgule
 	   //console.log(arraySection)
 	   var defaultDocLang = ($('html')[0].getAttribute('lang'))
 	   var test = '{ "'+defaultDocLang+'" : '+
@@ -85,6 +87,61 @@ var NewControlleur = function(slug){
 var SectionDisplayer = function(hash){
 	var allSection = $('section')
 	allSection.addClass('opp_f')
+
+	switch(hash[2]){
+		case 'accueil':
+			$('#title_home_section').hide()	
+			break
+		default: 			
+			if (!$('#'+hash[2])[0]){
+					//console.log('404')
+					hash[2] = '404'
+			}
+			var current_section = $('#'+hash[2]) // get name of current section
+			//console.log(current_section)
+			LayoutSwitchEffectToPage() 
+			//console.log(current_section)
+			if(current_section[0]){	
+				var menu_id = hash[2]	
+				var rt_page = hash[2]	
+				var lang = hash[1]		
+			}
+			if(!current_section[0]){	
+				var menu_id = 'accueil'		
+				var rt_page = '404'		
+				var lang = $('html')[0].getAttribute('lang')
+				current_section = $('#404')
+			}
+			//current_section.show();
+			// Show correct section
+			current_section.toggleClass('opp_f') // Show correct section
+
+			// Bof active correct item of navbar
+			$('ul>li.active').removeClass('active')
+			var menu_item = $('a[data-name="'+menu_id+'"]')
+			if(menu_item[0]){	
+				$(menu_item[0].parentElement).addClass('active') // Active correct menu item
+			}
+			// Eof
+	};
+	// Bof - btn langues
+	$('ul.dropdown-menu>li>a').on('click', function(e){
+		LangBtn(e)
+	});
+	// Bof - btn Accueil
+	$('.backtohome').on('click', function(){
+		BacktohomeBtn(allSection)
+	});
+	// Bof - lien mentions
+	$('a.mentions').on('click', function(e){
+		e.preventDefault();
+		//BacktohomeBtn(allSection)
+	});
+};
+/*
+var SectionDisplayer = function(hash){
+	var allSection = $('section')
+	allSection.addClass('opp_f')
 	switch(hash[2]){
 		case 'accueil':
 			$('#title_home_section').hide()	
@@ -127,8 +184,13 @@ var SectionDisplayer = function(hash){
 	$('.backtohome').on('click', function(){
 		BacktohomeBtn(allSection)
 	});
+	// Bof - lien mentions
+	$('a.mentions').on('click', function(e){
+		e.preventDefault();
+		//BacktohomeBtn(allSection)
+	});
 };
-
+*/
 var NewRouter = function(slug){
 	var sl = slug.length // nbr El in array
 	var r_sl;
