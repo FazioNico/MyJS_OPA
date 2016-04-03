@@ -270,6 +270,9 @@ main {
     }
 
 }
+footer {
+	z-index:9999;
+}
 #preloader {
 	position:absolute;
 	top:0;
