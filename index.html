@@ -6,7 +6,6 @@
 	<meta name="description" content="Avocat au Barreau de Genève, Attorney-at-law – Rechtsanwalt">
 	<meta name="keywords" content="avocat, genève, deutsch">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<meta name="robots" content="noindex, nofollow">
 	<meta name="og:url" content="http://schutz-law.ch/index.html">
 	<meta name="og:locale" content="fr">
 	<meta name="og:type" content="website">
@@ -16,7 +15,7 @@
 	<!-- Bof - CSS lib -->
 		<link rel="stylesheet" href="lib.src/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="vendor/css/stylesheet.css?v=0.1">
-		<link rel="stylesheet" href="src/templates/schutz/css/style.css?v=1.0.1">
+		<!--<link rel="stylesheet" href="src/templates/schutz/css/style.css?v=1.0.1">-->
 	<!-- Eof - CSS lib -->
 </head>
 <body class="full_height">
@@ -63,7 +62,7 @@
 	</header>
 
 	<main class="full_height ">
-		<section id="contact">
+		<section id ="contact">
 		  <div class="center_table_cell">
 			  <div class="container">
 				<div class="row">
@@ -71,9 +70,6 @@
 						<div id='map'></div>
 						<h1 class="hidden">Contact</h1>
 						<p>Rue de la Croix-d'Or 10<br>1204 Genève - Suisse</p><p>Tél: +41 22 310 49 42<br>Fax: +41 22 310 45 28<br>Mail: daniel@schutz-law.ch</p>
-						<p>
-							<a href="#/fr/question" class="btn btn-default">Posez votre question</a>
-						</p>
 					</div>
 				</div>
 			</div>
@@ -121,71 +117,7 @@
 				<div class="row">
 					<div class="col-sm-8 dataSection">
 						<h1>Cette page n'existe pas</h1>
-						<p>Retour sur <a href="./"> l'accueil</a></p>
-					</div>
-				</div>
-			</div>
-		  </div>
-		</section>
-		<section id="question">
-		  <div class="center_table_cell">
-		  	<div class="container">
-				<div class="row">
-					<div class="col-md-12 dataSection">
-						<div class="row">
-							<div class="col-sm-8 col-lg-7">
-								<h1>Posez moi votre question</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, laborum veritatis ipsa quidem voluptatum. Aut unde id, eveniet sed laudantium aspernatur fuga cupiditate, fugit ipsam perspiciatis vel. Facere, odit. Dolores.</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-4 col-lg-4">
-								<form id="question_form" class="material_effect" method="POST" action="send_form.php">
-									<div class="row">
-										<div class="form-group col-sm-10">
-											<label for="email">Email address</label>
-											<input type="email" class="form-control" id="email" name="email">
-										</div>
-									</div>
-									<div class="row">
-										<div class="form-group col-sm-10">
-											<label for="subject">Suget</label>
-											<input type="text" class="form-control" id="subject" name="subject">
-										</div>
-									</div>
-									<div class="row">
-										<div class="form-group col-sm-10">
-											<label for="message">Message</label>
-											<textarea id="message" name="message" class="form-control" rows="3"></textarea>
-										</div>
-									</div>
-									<button id="submit_btn" type="submit" class="btn btn-default">Envoyer</button>
-								</form>									
-							</div>	
-							<div class="col-sm-4 col-lg-3">
-								<div class="alert alert-warning alert-dismissible" role="alert">
-								  <button type="button" class="close btn-close-alert"><span aria-hidden="true">&times;</span></button>
-								  <div class="alert-content">
-								  	<!-- content by js function -->
-								  </div>
-								</div>	
-
-								<div class="alert alert-danger alert-dismissible" role="alert">
-								  <button type="button" class="close btn-close-alert"><span aria-hidden="true">&times;</span></button>
-								  <div class="alert-content">
-								  	<!-- content by js function -->
-								  </div>
-								</div>	
-
-								<div class="alert alert-success alert-dismissible" role="alert">
-								  <button type="button" class="close btn-close-alert"><span aria-hidden="true">&times;</span></button>
-								  <div class="alert-content">
-								  	<!-- content by js function -->
-								  </div>
-								</div>	
-
-							</div>		
-						</div>
+						<p>Retour sur <a href="#/fr/fff"> l'accueil</a></p>
 					</div>
 				</div>
 			</div>
@@ -210,43 +142,21 @@
 						        <span itemprop="addressCountry">Suisse</span>
 						    </span>
 						    <span itemprop="telephone">+41 22 310 49 42</span> 
-						    - <a class="mentions" data-toggle="modal" data-target="#mentions" href="#/fr/mentions">Mentions Légales</a> 
+						    - <a href="#/fr/mentions">Mentions Légales</a> 
 						</span>
 					</small>
 				</div>
 			</div>
 		</div>
-
-		<!-- Modal -->
-		<div class="modal fade" id="mentions" tabindex="-1" role="dialog">
-		  <div class="modal-dialog modal-lg" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h2 class="modal-title">Mentions Légales</h2>
-		      </div>
-		      <div class="modal-body">
-		        <!-- data from mentions.html -->
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Fermer</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>		
+		
 	</footer>
-	<div id="preloader" class="active"></div>
 	<!-- Bof - JS lib -->
 	<script type="text/javascript" src="lib.src/jquery/dist/jquery.min.js"></script>
-	<script>
-		// prevent bug with hidden element when page is loading ( reload 
-		setTimeout(function(){ $('#preloader').removeClass('active') }, 100);
-	</script>
 	<script type="text/javascript" src="lib.src/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
 	<script type="text/javascript" src="vendor/js/functions.js?v=0.0.1"></script>
 	<script type="text/javascript" src="vendor/js/app.js?v=0.0.1"></script>
 	<script type="text/javascript" src="vendor/js/style.js?v=0.0.1"></script>
 	<!-- Eof - JS lib -->
-
 </body>
 </html>
