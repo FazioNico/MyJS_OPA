@@ -89,9 +89,10 @@ $('#mentions').on('show.bs.modal', function (event) {
 // Form input effect 
 $(document).on('click', '.material_effect :input', function(){
 	var e = $(this);
-	console.log(e);
+	//console.log(e);
 	
-	var e__label = e.context.labels[0];
+	var e__label = e.context.previousElementSibling;
+	//console.log(e__label);
 	var e__value = e.context.value;
 	var e__length = e__value.length;
 	if(e__length <= 0){
@@ -101,7 +102,7 @@ $(document).on('click', '.material_effect :input', function(){
 });
 $(document).on('keyup', '.material_effect :input', function(){
 	var e = $(this);
-	var e__label = e.context.labels[0];
+	var e__label = e.context.previousElementSibling;
 	var e__value = e.context.value;
 	var e__length = e__value.length;
 	if(e__length <= 1){

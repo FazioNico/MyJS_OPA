@@ -277,31 +277,15 @@ footer {
 	position:absolute;
 	top:0;
 	left:0;
-	height: 100%;
-	width:100%;
-	z-index:-9999;
-	opacity: 0;
-	transition: 0.2s;
-}
-#preloader.active {
-	background: #20211c;
-	z-index: 9999;
-	opacity: 1;
-}
-
-#preloader {
-	position:absolute;
-	top:0;
-	left:0;
 	height:100%;
 	width:100%;
-	background: white;
 	z-index: -9999;
 	opacity: 0;
-	transition: 0.3s ;
+	transition: 0.2s ;
 }
 #preloader.active {
+	background: white;
 	opacity: 1;
-	height:100%;
 	z-index: 9999;
 }
+
