@@ -13,6 +13,11 @@
 	<meta name="og:title" content="Daniel F.Schütz">
 	<meta name="og:description" content="Avocat au Barreau de Genève, Attorney-at-law – Rechtsanwalt">
 	<meta name="og:updated_time" content="1457040415">
+	<!-- Bof - CSS lib -->
+		<link rel="stylesheet" href="lib.src/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/css/stylesheet.css?v=0.1">
+		<link rel="stylesheet" href="src/templates/schutz/css/style.css?v=1.0.1">
+	<!-- Eof - CSS lib -->
 	<!-- Bof - Icon & mobils utility -->
 		<meta name="application-name" content="Daniel F.Schütz" />
 		<meta name="mobile-web-app-capable" content="yes">
@@ -44,11 +49,6 @@
 		<meta name="msapplication-config" content="http://ateliers.nomades.ch/~fazio/Projet-WebDesigner/MyJS_OPA/src/templates/schutz/icons/browserconfig.xml?v=M44EEBNlpg">
 		<meta name="theme-color" content="#dcdcdc">
 	<!-- Eof - Icon & mobils utility -->
-	<!-- Bof - CSS lib -->
-		<link rel="stylesheet" href="lib.src/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="vendor/css/stylesheet.css?v=0.1">
-		<link rel="stylesheet" href="src/templates/schutz/css/style.css?v=1.0.1">
-	<!-- Eof - CSS lib -->
 </head>
 <body class="full_height">
 	<header class="full_height">
@@ -103,7 +103,7 @@
 						<h1 class="hidden">Contact</h1>
 						<p>Rue de la Croix-d'Or 10<br>1204 Genève - Suisse</p><p>Tél: +41 22 310 49 42<br>Fax: +41 22 310 45 28<br>Mail: daniel@schutz-law.ch</p>
 						<p>
-							<a href="#/fr/question" class="btn btn-default">Posez votre question</a>
+							<a href="#/fr/question" class="btn btn-default">Formulaire de Contact</a>
 						</p>
 					</div>
 				</div>
@@ -162,11 +162,12 @@
 		  <div class="center_table_cell">
 		  	<div class="container">
 				<div class="row">
-					<div class="col-md-12 dataSection">
+					<div class="col-md-12">
 						<div class="row">
-							<div class="col-sm-8 col-lg-7">
-								<h1>Posez moi votre question</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, laborum veritatis ipsa quidem voluptatum. Aut unde id, eveniet sed laudantium aspernatur fuga cupiditate, fugit ipsam perspiciatis vel. Facere, odit. Dolores.</p>
+							<div class="col-sm-8 col-lg-7 dataSection">
+								<h1>Formulaire de contact</h1>
+								<p>Vous pouvez utiliser ce formulaire pour contacter l’étude de Me Daniel F.Schütz. <br>
+								Il sera répondu à tous les messages soumis de manière sérieuse et complète dans les plus brefs délais.</p>
 							</div>
 						</div>
 						<div class="row">
@@ -265,12 +266,21 @@
 		  </div>
 		</div>		
 	</footer>
-	<div id="preloader" class="active"></div>
+	<div id="preloader" class="active">
+		<div id="svg-preloader">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="1024px" viewBox="0 0 1024 1150" xml:space="preserve">
+			  <path d="M770.048 210.656l-120.736 268-35.136 0 128.768-285.312-198.816 0 0 664.672c40.96 1.504 250.016 69.344 250.016 69.344l0 32.64-561.92 0 0-34.848c0 0 213.696-67.168 245.888-67.168l0-664.64-192.48 0 128.8 285.312-35.136 0-120.736-268-120.736 268-35.136 0 129.536-286.912 0-33.088 216.128 0c0-43.296 29.024-78.656 62.88-78.656 35.808 0 62.88 37.376 62.88 78.656l220.096 0 0 28.384 131.712 291.616-35.136 0-120.736-268zM416.64 511.328c0 86.176-59.776 169.024-158.048 169.024-96.064 0-158.048-82.848-158.048-169.024-0.032 0.128 316.096 0.128 316.096 0zM616.384 511.328c0 0.16 316.128 0.16 316.128 0 0 86.176-59.776 169.024-158.048 169.024-96.096 0-158.08-82.848-158.08-169.024z" /> 
+    		  <text x="50%" y="95%" dy=".2em">Daniel F.Schütz</text> 
+		      <rect xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="200%" height="100%"/>
+			</svg>
+		</div>
+	</div>
 	<!-- Bof - JS lib -->
 	<script type="text/javascript" src="lib.src/jquery/dist/jquery.min.js"></script>
-	<script>
+	<script async>
 		// prevent bug with hidden element when page is loading ( reload to ) 
-		setTimeout(function(){ $('#preloader').removeClass('active') }, 100);
+		setTimeout(function(){ $('#svg-preloader rect').addClass('move') }, 1000);
+		setTimeout(function(){ $('#preloader').removeClass('active') }, 2800);
 	</script>
 	<script type="text/javascript" src="lib.src/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
