@@ -6,10 +6,15 @@
         "title": "",
         "content": ""
       },
+      "question": {
+        "menu": "Contact",
+        "title": "Contact Form",
+        "content": "<h1>Contact Form</h1><p>You can use this form to contact the Chambers of Daniel F.Schütz. <br>Will be answered all posts subject of serious and comprehensive manner in the shortest possible time.</p>"
+      },
       "contact": {
         "menu": "Contact",
         "title": "",
-        "content": "<div id='map'></div><p>Rue de la Croix-d'Or 10<br>1204 Genève - Suisse</p><p>Tel: +41 22 310 49 42<br>Fax: +41 22 310 45 28<br>Mail: daniel@schutz-law.ch</p>"
+        "content": "<div id='map'></div><p>Rue de la Croix-d'Or 10<br>1204 Genève - Suisse</p><p>Tel: +41 22 310 49 42<br>Fax: +41 22 310 45 28<br>Mail: daniel@schutz-law.ch</p><p><a href='#/en/question' class='btn btn-default'>Contact Form</a></p>"
       },
       "activitees": {
         "menu": "Activity areas",
@@ -41,7 +46,12 @@
       "contact": {
         "menu": "Kontakt",
         "title": "",
-        "content": "<div id='map'></div><p>Rue de la Croix-d'Or 10<br>1204 Genève - Suisse</p><p>Tel: +41 22 310 49 42<br>Fax: +41 22 310 45 28<br>Mail: daniel@schutz-law.ch</p>"
+        "content": "<div id='map'></div><p>Rue de la Croix-d'Or 10<br>1204 Genève - Suisse</p><p>Tel: +41 22 310 49 42<br>Fax: +41 22 310 45 28<br>Mail: daniel@schutz-law.ch</p><p><a href='#/de/question' class='btn btn-default'>Kontaktformular</a></p>"
+      },
+      "question": {
+        "menu": "Contact",
+        "title": "Kontaktformular",
+        "content": "<h1>Kontaktformular</h1><p>Sie können dieses Formular verwenden, um die Kammern von Daniel F.Schütz zu kontaktieren. <br> werden alle Beiträge ernst und umfassend Thema in kürzester Zeit beantwortet werden.</p>"
       },
       "activitees": {
         "menu": "Tätigkeitgebiete",
